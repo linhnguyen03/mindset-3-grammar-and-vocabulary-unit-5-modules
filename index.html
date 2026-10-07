@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mindset 3 Unit 5 – Vocabulary & Grammar</title>
+<style>
+:root{
+  --navy:#1b2a41;
+  --navy2:#28405f;
+  --sand:#f6f3ea;
+  --gold:#c9a227;
+  --good:#1e7d45;
+  --bad:#b3261e;
+  --muted:#6b7280;
+}
+*{box-sizing:border-box;}
+body{
+  margin:0;
+  font-family:'Segoe UI',Arial,sans-serif;
+  background:var(--sand);
+  color:#222;
+  line-height:1.5;
+}
+header{
+  background:var(--navy);
+  color:#fff;
+  padding:28px 20px;
+  text-align:center;
+}
+header h1{
+  margin:0 0 6px;
+  font-size:1.8em;
+}
+header p{
+  margin:0;
+  color:#d7dde6;
+  font-size:.98em;
+}
+.container{
+  max-width:860px;
+  margin:0 auto;
+  padding:24px 16px 80px;
+}
+.card{
+  background:#fff;
+  border-radius:12px;
+  padding:22px 24px;
+  margin-bottom:22px;
+  box-shadow:0 2px 8px rgba(0,0,0,.06);
+}
+.ex-title{
+  color:var(--navy);
+  border-bottom:3px solid var(--gold);
+  display:inline-block;
+  padding-bottom:4px;
+  margin:0 0 10px;
+  font-size:1.25em;
+}
+.ex-instructions{
+  color:#444;
+  margin:0 0 16px;
+  font-size:.98em;
+}
+.infobox{
+  background:#f3ead0;
+  border:1px solid #d9c47f;
+  border-radius:10px;
+  padding:14px 18px;
+  margin:0 0 18px;
+  font-size:.94em;
+}
+.infobox table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:6px;
+}
+.infobox td,.infobox th{
+  text-align:left;
+  padding:6px 8px;
+  vertical-align:top;
+  font-size:.96em;
+}
+.infobox th{
+  border-bottom:1px solid #c9b875;
+}
+.wordbank{
+  background:#eef2fa;
+  border:1px dashed #9fb3d6;
+  border-radius:10px;
+  padding:12px 16px;
+  margin-bottom:16px;
+  font-size:.95em;
+}
+.wordbank b{color:var(--navy2);}
+.q{
+  margin-bottom:14px;
+  padding-bottom:12px;
+  border-bottom:1px solid #eee;
+}
+.q:last-child{border-bottom:none;}
+.q-num{
+  font-weight:700;
+  color:var(--navy2);
+  margin-right:4px;
+}
+select, .blank-input{
+  padding:6px 8px;
+  border:1px solid #c6cedb;
+  border-radius:6px;
+  font-size:.96em;
+  font-family:inherit;
+}
+.blank-input{min-width:170px;}
+.opts label{
+  display:block;
+  margin:4px 0;
+  cursor:pointer;
+}
+.opts input{margin-right:6px;}
+.feedback{
+  margin-left:8px;
+  font-weight:600;
+}
+.feedback.correct{color:var(--good);}
+.feedback.wrong{color:var(--bad);}
+.correct-answer{
+  font-weight:500;
+  color:var(--bad);
+  font-style:italic;
+}
+.locked select, .locked input{
+  pointer-events:none;
+  opacity:.75;
+}
+.submit-bar{
+  position:sticky;
+  bottom:0;
+  background:var(--sand);
+  padding:14px 0;
+  text-align:center;
+  border-top:1px solid #ddd;
+}
+button{
+  background:var(--navy);
+  color:#fff;
+  border:none;
+  padding:12px 26px;
+  border-radius:30px;
+  font-size:1em;
+  cursor:pointer;
+  margin:0 6px;
+}
+button.secondary{
+  background:#fff;
+  color:var(--navy);
+  border:1px solid var(--navy);
+}
+#scoreCard{
+  display:none;
+  background:var(--navy);
+  color:#fff;
+  border-radius:12px;
+  padding:20px;
+  text-align:center;
+  margin-bottom:22px;
+}
+#scoreCard h2{margin:0 0 6px;}
+#scoreText{font-size:2em;font-weight:700;color:var(--gold);}
+.catbox{
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
+  margin-top:10px;
+}
+.catcol{
+  flex:1;
+  min-width:150px;
+  background:#f8f9fb;
+  border:1px solid #e1e6ee;
+  border-radius:8px;
+  padding:10px;
+}
+.catcol h4{
+  margin:0 0 8px;
+  text-align:center;
+  color:var(--navy2);
+}
+.catitem{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:6px;
+  background:#fff;
+  border:1px solid #e1e6ee;
+  border-radius:6px;
+  padding:6px 8px;
+  margin-bottom:6px;
+  font-size:.92em;
+}
+.catitem select{font-size:.85em;padding:3px 4px;min-width:auto;}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Mindset 3 Unit 5 – Vocabulary & Grammar</h1>
+  <p>History: key vocabulary, conditionals, and expressing attitudes</p>
+</header>
+
+<div class="container">
+
+  <!-- EXERCISE 1 -->
+  <div class="card">
+    <h2 class="ex-title">Exercise 1</h2>
+    <p class="ex-instructions">Match the words with the definitions.</p>
+    <div class="wordbank"><b>Word bank:</b> abdicate, constitution, coronation, emperor, monarchy, president, reign, throne</div>
+    <div id="ex1"></div>
+  </div>
+
+  <!-- EXERCISE 2 -->
+  <div class="card">
+    <h2 class="ex-title">Exercise 2</h2>
+    <p class="ex-instructions">Read the information. Then correct the <u>underlined</u> mistakes.</p>
+    <div class="infobox">
+      <b>abdicate:</b> to make a formal statement that you no longer wish to be king or queen<br>
+      <b>constitution:</b> a set of political principles by which a state or organisation is governed<br>
+      <b>coronation:</b> a ceremony at which a person is made king or queen<br>
+      <b>emperor:</b> the ruler of an empire<br>
+      <b>monarchy:</b> a country that has a king or queen<br>
+      <b>president:</b> the person who has the highest political position in a republic<br>
+      <b>reign:</b> period of time ruling as king or queen of a country<br>
+      <b>throne:</b> a special chair used by a ruler, especially a king or queen
+    </div>
+    <div id="ex2"></div>
+  </div>
+
+  <!-- EXERCISE 3 -->
+  <div class="card">
+    <h2 class="ex-title">Exercise 3</h2>
+    <p class="ex-instructions">Read the information. Then choose the correct sentences to match the types of conditional shown in bold.</p>
+    <div class="infobox">
+      <table>
+        <tr><th>Type of conditional</th><th><i>If</i> clause (situation)</th><th>Result clause</th></tr>
+        <tr><td><b>Second</b> (hypothetical present situation with hypothetical present or future result)</td><td><i>If</i> + past simple / past continuous</td><td><i>would</i> + verb</td></tr>
+        <tr><td><b>Third</b> (hypothetical past situation with hypothetical past result)</td><td><i>If</i> + past perfect / past perfect continuous</td><td><i>would have</i> + past participle</td></tr>
+        <tr><td><b>Mixed 1</b> (hypothetical past situation with present result)</td><td><i>If</i> + past perfect / past perfect continuous</td><td><i>would</i> + verb</td></tr>
+        <tr><td><b>Mixed 2</b> (hypothetical present situation with past result)</td><td><i>If</i> + past simple / past continuous</td><td><i>would have</i> + past participle</td></tr>
+      </table>
+      <p style="margin:10px 0 0;"><b>Remember:</b></p>
+      <ul style="margin:4px 0 0;padding-left:20px;">
+        <li><i>Would</i> can be replaced by <i>could</i> or <i>might</i>.</li>
+        <li>There are some possible variations on the <i>if</i> clause. For example, we might use an inversion (<i>If he had known</i> = <i>Had he known</i>) or express the <i>if</i> clause with a paraphrase (<i>Without his rule</i> = <i>If he had not ruled</i>).</li>
+      </ul>
+    </div>
+    <div id="ex3"></div>
+  </div>
+
+  <!-- EXERCISE 4 -->
+  <div class="card">
+    <h2 class="ex-title">Exercise 4</h2>
+    <p class="ex-instructions">Complete the sentences with the types of conditional shown in bold. Use the verbs in brackets.</p>
+    <div id="ex4"></div>
+  </div>
+
+  <!-- EXERCISE 5 -->
+  <div class="card">
+    <h2 class="ex-title">Exercise 5</h2>
+    <p class="ex-instructions">Read the information. Then add the words in the box to the correct groups of expressions.</p>
+    <div class="infobox">Some IELTS Reading and Listening tasks test your ability to understand the attitude of the writer or speaker. The attitude is often expressed by synonyms or paraphrases of the words and ideas in the questions.<br><br>
+    It can be useful when you are learning new vocabulary to group words and expressions which have similar meanings. Knowing a number of ways of expressing an idea can also help you in some IELTS Speaking and Writing tasks because it helps you to avoid repeating the same vocabulary. This will help improve your Lexical Resource mark.</div>
+    <div class="wordbank"><b>Word bank:</b> difficult, furious, happy, impressive, satisfactory, shocked</div>
+    <div id="ex5"></div>
+  </div>
+
+  <!-- EXERCISE 6 -->
+  <div class="card">
+    <h2 class="ex-title">Exercise 6</h2>
+    <p class="ex-instructions">Read the comments made by different speakers. Choose the correct words to match the speakers' attitudes.</p>
+    <div id="ex6"></div>
+  </div>
+
+  <!-- EXERCISE 7 -->
+  <div class="card">
+    <h2 class="ex-title">Exercise 7</h2>
+    <p class="ex-instructions">Choose the correct prepositions or time phrases to complete the sentences about history.</p>
+    <div id="ex7"></div>
+  </div>
+
+  <!-- EXERCISE 8 -->
+  <div class="card">
+    <h2 class="ex-title">Exercise 8</h2>
+    <p class="ex-instructions">Complete the table with the phrases in the box. For each phrase, choose whether it shows <b>agree</b>, <b>neither agree nor disagree</b>, or <b>disagree</b>.</p>
+    <div id="ex8"></div>
+  </div>
+
+  <!-- EXERCISE 9 -->
+  <div class="card">
+    <h2 class="ex-title">Exercise 9</h2>
+    <p class="ex-instructions">Read the extract from a seminar discussion between a history professor and two of his students. Complete the sentences with the expressions in the box.</p>
+    <div class="wordbank"><b>Word bank:</b> I'm sitting on the fence, absolutely, hadn't left, not necessarily, would be speaking, would have continued, would have increased, would have introduced, would have succeeded</div>
+    <div id="ex9"></div>
+  </div>
+
+  <div class="submit-bar">
+    <button onclick="gradeAll()">✅ Check my answers</button>
+    <button class="secondary" onclick="resetAll()">↺ Reset</button>
+  </div>
+
+  <div id="scoreCard">
+    <h2>Your Score</h2>
+    <div id="scoreText"></div>
+    <p id="scoreMsg"></p>
+  </div>
+
+</div>
+
+<script>
+/* ---------- ANSWER KEY ---------- */
+const KEY = {
+  ex1: ["monarchy","throne","coronation","reign","abdicate","emperor","president","constitution"],
+  ex2: ["constitution","coronation","abdicate","president","emperors","throne"],
+  ex3: [2,2,1,1,1,1,1,1],
+  ex4: ["would have reigned","increased","had not abdicated","improved","would not have happened","would take","would have been forced","had not come down"],
+  ex5: ["furious","impressive","shocked","difficult","satisfactory","happy"],
+  ex6: ["confused","embarrassed","disappointed","impressed","relieved","sympathetic"],
+  ex7: ["During","early","prehistoric","past","In","reign","Since","decade"],
+  ex8: {
+    "Certainly.":"agree","Of course.":"agree","Sure.":"agree","Absolutely.":"agree","That's exactly how I feel.":"agree","Without a doubt.":"agree",
+    "There are two ways of looking at this.":"neither","Possibly.":"neither","To some extent.":"neither","It's hard to say.":"neither","There may be some truth in that, but …":"neither","I am sitting on the fence.":"neither",
+    "Not really.":"disagree","Definitely not.":"disagree","Not at all.":"disagree","No way!":"disagree","I'd say the exact opposite is true.":"disagree","Not necessarily.":"disagree"
+  },
+  ex9: ["hadn't left","Absolutely","I'm sitting on the fence","would have continued","would have increased","would have introduced","would be speaking","Not necessarily","would have succeeded"]
+};
+
+function normalize(s){
+  return (s||"").toString().trim().toLowerCase().replace(/[-–—'’\s]/g,"");
+}
+function mark(elId, isCorrect, correctText){
+  const el = document.getElementById(elId);
+  if(!el) return;
+  if(isCorrect){ el.innerHTML = "✔"; el.className="feedback correct"; }
+  else { el.innerHTML = `✘ <span class="correct-answer">(answer: ${correctText})</span>`; el.className="feedback wrong"; }
+}
+function getRadio(name){
+  const r = document.querySelector(`input[name="${name}"]:checked`);
+  return r ? r.value : null;
+}
+
+/* ---------- BUILD EXERCISE 1 ---------- */
+const ex1data = [
+  "a country that has a king or queen",
+  "a special chair used by a ruler, especially a king or queen",
+  "a ceremony at which a person is made king or queen",
+  "to rule as king or queen of a country",
+  "to make a formal statement that you no longer wish to be king or queen",
+  "the ruler of an empire",
+  "the person who has the highest political position in a republic",
+  "a set of political principles or laws by which a state or organisation is governed"
+];
+const ex1words = ["abdicate","constitution","coronation","emperor","monarchy","president","reign","throne"];
+document.getElementById('ex1').innerHTML = ex1data.map((t,i)=>`
+  <div class="q"><span class="q-num">${i+1}.</span> ${t}:
+  <select id="ex1-${i}"><option value="">-- choose --</option>${ex1words.map(w=>`<option value="${w}">${w}</option>`).join('')}</select>
+  <span class="feedback" id="ex1-fb-${i}"></span></div>
+`).join('');
+
+/* ---------- BUILD EXERCISE 2 ---------- */
+const ex2data = [
+  {t:"Clause 7 of the", u:"throne", t2:"states that people should pay taxes to the government."},
+  {t:"The date of the princess's", u:"monarchy", t2:"will be Saturday 12 April."},
+  {t:"The king announced on the news that he intended to", u:"reign", t2:"with immediate effect."},
+  {t:"Nelson Mandela became", u:"monarch", t2:"of the Republic of South Africa on 10 May 1994."},
+  {t:"Julius Caesar is probably one of the most famous Roman", u:"monarchs", t2:"."},
+  {t:"The queen sat on her", u:"constitution", t2:"throughout the coronation ceremony."}
+];
+document.getElementById('ex2').innerHTML = ex2data.map((it,i)=>`
+  <div class="q"><span class="q-num">${i+1}.</span> ${it.t} <u>${it.u}</u> ${it.t2}<br>
+  Correct word: <input class="blank-input" id="ex2-${i}" style="width:220px;">
+  <span class="feedback" id="ex2-fb-${i}"></span></div>
+`).join('');
+
+/* ---------- BUILD EXERCISE 3 ---------- */
+const ex3data = [
+  {type:"THIRD CONDITIONAL", opts:["If he had become president, he would completely reform the tax system.","If he had become president, he would have completely reformed the tax system."]},
+  {type:"THIRD CONDITIONAL", opts:["There won't have been a constitutional crisis if he hadn't abdicated without warning.","There wouldn't have been a constitutional crisis if he hadn't abdicated without warning."]},
+  {type:"SECOND CONDITIONAL", opts:["If everyone paid their taxes, the country would have a stronger economy.","If everyone pays their taxes, the country will have a stronger economy."]},
+  {type:"THIRD CONDITIONAL", opts:["If Queen Joanna of Castile hadn't been declared mad, she might have continued to rule Spain until her death in 1555.","If Queen Joanna of Castile wasn't declared mad, she might have continued to rule Spain until her death in 1555."]},
+  {type:"THIRD CONDITIONAL", opts:["Had the emperor spared the prisoners' lives, they would have become loyal citizens.","Would the emperor have spared the prisoners' lives, they had become loyal citizens."]},
+  {type:"SECOND CONDITIONAL", opts:["The legal system would be fairer if judges came from a wider cross-section of society.","The legal system would be fairer if judges come from a wider cross-section of society."]},
+  {type:"SECOND CONDITIONAL", opts:["The approach of officials would change if the government made them more accountable for their actions.","The approach of officials would have changed if the government made them more accountable for their actions."]},
+  {type:"MIXED CONDITIONAL 1 (PAST SITUATION WITH PRESENT RESULT)", opts:["Had the prime minister resigned sooner, the country wouldn't be in an economic crisis.","Had the prime minister resigned sooner, the country wouldn't have been in an economic crisis."]}
+];
+document.getElementById('ex3').innerHTML = ex3data.map((it,i)=>`
+  <div class="q"><span class="q-num">${i+1}.</span> <b>${it.type}</b><br>
+  <div class="opts">${it.opts.map((o,j)=>`<label><input type="radio" name="ex3-${i}" value="${j+1}"> ${o}</label>`).join('')}</div>
+  <span class="feedback" id="ex3-fb-${i}"></span></div>
+`).join('');
+
+/* ---------- BUILD EXERCISE 4 ---------- */
+const ex4data = [
+  {t:"If she had lived two years longer, she", v:"reign", t2:"for 60 years.", type:"THIRD CONDITIONAL"},
+  {t:"They could build a new palace for the monarchy if they", v:"increase", t2:"taxes.", type:"SECOND CONDITIONAL"},
+  {t:"There wouldn't have been a constitutional crisis if the king", v:"abdicate", t2:"without warning.", type:"THIRD CONDITIONAL"},
+  {t:"If the government", v:"improve", t2:"the country's economy, there would be less unemployment.", type:"SECOND CONDITIONAL"},
+  {t:"Had the French king treated his subjects better, the revolution probably", v:"not happen", t2:"when it did.", type:"THIRD CONDITIONAL"},
+  {t:"If I had my camera, I", v:"take", t2:"a photo of the queen from the palace gates.", type:"SECOND CONDITIONAL"},
+  {t:"Without the support of the government, the emperor", v:"force – passive", t2:"to abdicate.", type:"THIRD CONDITIONAL"},
+  {t:"Germany might be a very different country today if the Berlin Wall", v:"come down", t2:"in 1989.", type:"MIXED CONDITIONAL 1"}
+];
+document.getElementById('ex4').innerHTML = ex4data.map((it,i)=>`
+  <div class="q"><span class="q-num">${i+1}.</span> ${it.t}
+  <input class="blank-input" id="ex4-${i}"> (${it.v}) ${it.t2} <b>${it.type}</b>
+  <span class="feedback" id="ex4-fb-${i}"></span></div>
+`).join('');
+
+/* ---------- BUILD EXERCISE 5 ---------- */
+const ex5data = [
+  "I lost my temper. / outraged / I was up in arms. / angry",
+  "extraordinary / remarkable / striking / It blew me away.",
+  "amazed / stunned / My head was spinning. / It left me speechless.",
+  "tough / tricky / challenging / demanding",
+  "acceptable / sufficient / adequate / up to scratch",
+  "pleased / delighted / ecstatic / It made my day."
+];
+const ex5words = ["difficult","furious","happy","impressive","satisfactory","shocked"];
+document.getElementById('ex5').innerHTML = ex5data.map((t,i)=>`
+  <div class="q"><span class="q-num">${i+1}.</span> ${t} &rarr;
+  <select id="ex5-${i}"><option value="">-- choose --</option>${ex5words.map(w=>`<option value="${w}">${w}</option>`).join('')}</select>
+  <span class="feedback" id="ex5-fb-${i}"></span></div>
+`).join('');
+
+/* ---------- BUILD EXERCISE 6 ---------- */
+const ex6data = [
+  {t:"I have no idea why the government would change that law. It's beyond me to explain it.", opts:["angry","confused","fascinated"]},
+  {t:"When my tutor told me that I had failed my history test, I was lost for words. In fact, I went bright red and couldn't look her in the eye.", opts:["bored","embarrassed","worried"]},
+  {t:"I can't believe she let me down again. I have put my trust in her so many times, but she always fails to live up to my expectations.", opts:["delighted","disappointed","sympathetic"]},
+  {t:"Wow! That new history exhibition is something else. Whoever made it deserves a round of applause.", opts:["confused","impressed","stressed"]},
+  {t:"Thank goodness for that! I really thought that history test was going to be incredibly difficult, but it wasn't as tough as I imagined.", opts:["confused","relieved","shocked"]},
+  {t:"Oh you poor thing! That must have been terrible.", opts:["angry","disappointed","sympathetic"]}
+];
+document.getElementById('ex6').innerHTML = ex6data.map((it,i)=>`
+  <div class="q"><span class="q-num">${i+1}.</span> ${it.t}<br>
+  <div class="opts">${it.opts.map(o=>`<label><input type="radio" name="ex6-${i}" value="${o}"> ${o}</label>`).join('')}</div>
+  <span class="feedback" id="ex6-fb-${i}"></span></div>
+`).join('');
+
+/* ---------- BUILD EXERCISE 7 ---------- */
+const ex7data = [
+  {t:"the reign of Queen Victoria, Britain became a world power.", opts:["At","During","On"]},
+  {t:"In twentieth century, many people living in large cities in Britain suffered from poor health.", opts:["the beginning","early","end"]},
+  {t:"The Stonehenge monument in the west of England was built in the period.", opts:["elderly","old","prehistoric"]},
+  {t:"Over the 30 years, there has been a huge amount of change in people's living standards.", opts:["latest","past","recent"]},
+  {t:"the fifties and sixties, there were massive social changes affecting all aspects of life around the world.", opts:["At","In","On"]},
+  {t:"The Titanic sank during the of King George V.", opts:["dynasty","realm","reign"]},
+  {t:"2000, there has been a massive increase in the use of mobile technology globally.", opts:["At","Before","Since"]},
+  {t:"The 1960s was the that saw humans first explore outer space.", opts:["century","decade","millennia"]}
+];
+document.getElementById('ex7').innerHTML = ex7data.map((it,i)=>`
+  <div class="q"><span class="q-num">${i+1}.</span> ${it.t}<br>
+  <div class="opts">${it.opts.map(o=>`<label><input type="radio" name="ex7-${i}" value="${o}"> ${o}</label>`).join('')}</div>
+  <span class="feedback" id="ex7-fb-${i}"></span></div>
+`).join('');
+
+/* ---------- BUILD EXERCISE 8 ---------- */
+const ex8phrases = ["Certainly.","Of course.","Sure.","Absolutely.","That's exactly how I feel.","Without a doubt.",
+  "There are two ways of looking at this.","Possibly.","To some extent.","It's hard to say.","There may be some truth in that, but …","I am sitting on the fence.",
+  "Not really.","Definitely not.","Not at all.","No way!","I'd say the exact opposite is true.","Not necessarily."];
+// shuffle deterministically for display (keep original order actually, simplest)
+document.getElementById('ex8').innerHTML = ex8phrases.map((p,i)=>`
+  <div class="catitem"><span>${p}</span>
+  <span>
+  <select id="ex8-${i}">
+    <option value="">--</option>
+    <option value="agree">agree</option>
+    <option value="neither">neither agree nor disagree</option>
+    <option value="disagree">disagree</option>
+  </select>
+  <span class="feedback" id="ex8-fb-${i}"></span>
+  </span></div>
+`).join('');
+
+/* ---------- BUILD EXERCISE 9 ---------- */
+const ex9blanks = [
+  {before:"Professor Browning: We discussed the importance of speculation at our last seminar, and as a follow-up I asked you to consider what might have happened if the Romans", after:"Britain in the fourth century AD. But firstly, I'd like to ask you both if you agree that speculation can help us better interpret history or at least understand it better. What do you think, Jane? Did you find it a useful approach to looking at Roman history?"},
+];
+const ex9data = [
+  "Professor Browning: We discussed the importance of speculation at our last seminar, and as a follow-up I asked you to consider what might have happened if the Romans ___1___ Britain in the fourth century AD. But firstly, I'd like to ask you both if you agree that speculation can help us better interpret history or at least understand it better. What do you think, Jane? Did you find it a useful approach to looking at Roman history?",
+  "Jane: ___2___! It really helped me think about how empires are built.",
+  "Tom: For the time being, ___3___. I haven't decided how useful it might be.",
+  "Professor Browning: OK. Jane, would you like to start off with the task I set you and then we can discuss the approach based on some historical information?",
+  "Jane: Well, it seems obvious to me that if the Romans hadn't left Britain at that time, they ___4___ developing the network of roads. Additionally, they ___5___ the number of bridges and aqueducts. I am also pretty sure that the Romans ___6___ a new and comprehensive legal system, and that perhaps now we all ___7___ a Latin dialect instead of English!",
+  "Tom: ___8___. For a start, I seriously doubt that the Romans ___9___ in imposing their language on the Britons!",
+  "Professor Browning: Interesting. Let's go through some of those other points you raised, Jane …"
+];
+function renderEx9Line(line){
+  return line.replace(/___(\d)___/g, (m,n)=>`<input class="blank-input" id="ex9-${n-1}" style="width:200px;"><span class="feedback" id="ex9-fb-${n-1}"></span>`);
+}
+document.getElementById('ex9').innerHTML = ex9data.map(l=>`<p>${renderEx9Line(l)}</p>`).join('');
+
+/* ---------- GRADING ---------- */
+function gradeAll(){
+  let total=0, scored=0;
+
+  // Ex1
+  KEY.ex1.forEach((ans,i)=>{
+    const v = document.getElementById(`ex1-${i}`).value;
+    const ok = v===ans;
+    total++; if(ok) scored++;
+    mark(`ex1-fb-${i}`, ok, ans);
+  });
+
+  // Ex2
+  KEY.ex2.forEach((ans,i)=>{
+    const v = document.getElementById(`ex2-${i}`).value;
+    const ok = normalize(v)===normalize(ans);
+    total++; if(ok) scored++;
+    mark(`ex2-fb-${i}`, ok, ans);
+  });
+
+  // Ex3
+  KEY.ex3.forEach((ans,i)=>{
+    const v = getRadio(`ex3-${i}`);
+    const ok = v===String(ans);
+    total++; if(ok) scored++;
+    mark(`ex3-fb-${i}`, ok, `option ${ans}`);
+  });
+
+  // Ex4
+  KEY.ex4.forEach((ans,i)=>{
+    const v = document.getElementById(`ex4-${i}`).value;
+    const ok = normalize(v)===normalize(ans);
+    total++; if(ok) scored++;
+    mark(`ex4-fb-${i}`, ok, ans);
+  });
+
+  // Ex5
+  KEY.ex5.forEach((ans,i)=>{
+    const v = document.getElementById(`ex5-${i}`).value;
+    const ok = v===ans;
+    total++; if(ok) scored++;
+    mark(`ex5-fb-${i}`, ok, ans);
+  });
+
+  // Ex6
+  KEY.ex6.forEach((ans,i)=>{
+    const v = getRadio(`ex6-${i}`);
+    const ok = v===ans;
+    total++; if(ok) scored++;
+    mark(`ex6-fb-${i}`, ok, ans);
+  });
+
+  // Ex7
+  KEY.ex7.forEach((ans,i)=>{
+    const v = getRadio(`ex7-${i}`);
+    const ok = v===ans;
+    total++; if(ok) scored++;
+    mark(`ex7-fb-${i}`, ok, ans);
+  });
+
+  // Ex8
+  ex8phrases.forEach((p,i)=>{
+    const v = document.getElementById(`ex8-${i}`).value;
+    const ans = KEY.ex8[p];
+    const ok = v===ans;
+    total++; if(ok) scored++;
+    const label = ans==='agree'?'agree':ans==='neither'?'neither agree nor disagree':'disagree';
+    mark(`ex8-fb-${i}`, ok, label);
+  });
+
+  // Ex9
+  KEY.ex9.forEach((ans,i)=>{
+    const v = document.getElementById(`ex9-${i}`).value;
+    const ok = normalize(v)===normalize(ans);
+    total++; if(ok) scored++;
+    mark(`ex9-fb-${i}`, ok, ans);
+  });
+
+  document.querySelectorAll('#ex1,#ex2,#ex3,#ex4,#ex5,#ex6,#ex7,#ex8,#ex9').forEach(sec=>{
+    sec.querySelectorAll('input, select').forEach(el=>{ el.disabled = true; });
+  });
+
+  document.getElementById('scoreCard').style.display='block';
+  document.getElementById('scoreText').textContent = `${scored} / ${total}`;
+  const pct = Math.round((scored/total)*100);
+  let msg = "";
+  if(pct>=90) msg="Excellent work! 🎉";
+  else if(pct>=70) msg="Good job — review the ones you missed.";
+  else if(pct>=50) msg="Nice try — go back over the rules and try again.";
+  else msg="Keep practicing — review the conditionals and vocabulary above.";
+  document.getElementById('scoreMsg').textContent = `${pct}% correct. ${msg}`;
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+
+function resetAll(){ location.reload(); }
+</script>
+
+</body>
+</html>
